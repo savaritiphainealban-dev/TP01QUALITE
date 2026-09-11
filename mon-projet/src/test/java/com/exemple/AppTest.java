@@ -17,8 +17,15 @@ public class AppTest
      */
     public AppTest( String testName )
     {
-        super( testName );
+        App calculatrice = new App();
+        
+        // On vérifie que 2 + 3 donne bien 5
+        int resultat = calculatrice.add(2, 3);
+        
+        // La syntaxe de JUnit 4 pour assertEquals : (messageOptionnel, attendu, reel)
+        assertEquals("L'addition de 2 et 3 doit retourner 5", 5, resultat);
     }
+    
 
     /**
      * @return the suite of tests being tested
