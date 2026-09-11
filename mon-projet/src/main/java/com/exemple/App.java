@@ -1,13 +1,15 @@
 package com.exemple;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+
+    // Notre "feature add"
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        App calculatrice = new App();
+        int resultat = calculatrice.add(5, 7);
+        System.out.println("Le résultat de 5 + 7 est : " + resultat);
     }
 }
